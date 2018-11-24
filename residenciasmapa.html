@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="resimapa.css">
+    <script src="resimapa.js"></script>
 </head>
 <body>
     <section>
@@ -65,52 +66,7 @@
       </div>
     </section>
 
-
-
-<style>
-
-</style>
-
-
- <script>
-        // Initialize and add the map
-        function initMap() {
-          // The location of Uluru
-          var uluru = {lat: 40.20564, lng: -8.41955};
-          var alegria = {lat: 40.20659, lng:  -8.42813};
-          // The map, centered at Uluru
-          var map = new google.maps.Map(
-              document.getElementById('mapa'), {zoom: 14, center: uluru});
-          // The marker, positioned at Uluru
-          
-          var marker = new google.maps.Marker({position: alegria, map: map});
-
-          var infowindow = new google.maps.infowindow({
-              content:"localização1"
-          });
-          infowindow.open(map, marker);
-        }
-            </script>
-            <!--Load the API from the specified URL
-            * The async attribute allows the browser to render the page while the API loads
-            * The key parameter will contain your own API key (which is not needed for this tutorial)
-            * The callback parameter executes the initMap() function
-            -->
-            <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgDWH_VZSd0SftIOlCXE5jbpDYaYV6nDw&callback=initMap">
-            </script>
-
-<script>
-
-        function openNav() {
-                document.getElementById("mySidenav").style.width = "100%";
-            }
-            
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-            </script>
-</body>
+ 
 </html>
 
 
