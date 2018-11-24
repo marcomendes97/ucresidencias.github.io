@@ -1,0 +1,255 @@
+
+.grid {
+  display: grid;
+  grid-template-columns: 150px auto 300px;
+  grid-template-rows: repeat(3, 200px);
+  grid-gap: 1em;
+}
+
+header,
+aside,
+article,
+footer {
+  /*background: #eaeaea;*/
+
+  padding: 1em;
+}
+
+header, footer {
+  grid-column: 1 / 4;
+}
+
+/* Demo Specific Styles */
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 1em 0;
+}
+
+.grid > * {
+
+}
+
+
+.info{
+    align-content: left;
+    bottom: 30px;
+    position: relative;
+    left: 120px;  
+    font-size: 2rem;
+    font-weight: bold;
+    color: #008C9E;
+    opacity: 0.5;
+    font-family: Poppins, sans-serif;
+}
+
+.resi{
+  
+    position: relative;
+    bottom: 120px;
+    left: 115px;
+    font-size:5rem;
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+   
+}
+
+
+
+
+
+.menu{
+    
+    width: 60px;
+    height: 4px;
+    background-color: black;
+    margin: 9px 0;
+  
+}
+.areamenu{
+    position: absolute;
+    right: 0;
+    width: 200px;
+    top: 80px;
+}
+
+
+.numero{
+    font-size: 30pt;
+    color: #008C9E;
+    font-weight: bold;
+    position: relative;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    top: 80px;
+    left: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.textright{
+    font-size: 50pt;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: relative;
+    top:80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.artigo{
+    position: relative;
+    width: 70%;
+    top: 80px;
+    left: 190px;
+
+}
+
+
+.textoartigo{
+    font-size: 13pt;
+    letter-spacing: 0.5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+#innomecompleto{
+   position: relative;
+   margin-left: 9%;
+   width: 500px;
+}
+
+#inidade{
+   position: relative;
+   margin-left: 21.2%;
+   width: 500px;
+}
+
+#intele{
+   position: relative;
+   margin-left: 13.2%;
+   width: 500px;
+}
+
+#inemail{
+   position: relative;
+   margin-left: 21.8%;
+   width: 500px;
+}
+
+
+#inlocal{
+   position: relative;
+   margin-left:4.7%;
+   width: 500px;
+}
+
+
+#inpais{
+   position: relative;
+   margin-left: 6%;
+   width: 500px;
+}
+
+
+.font{
+    font-size: 13pt;
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+.botao1{
+    width:  150px;
+    height: 50px;
+border:2px solid black;
+background-color: white;
+font-family:'poppins', sans-serif;
+font-size: 17pt;
+cursor:pointer;
+transition: color 0.3s;
+transition: border 0.3s;
+transition: background-color 0.3s;
+}
+
+.botao1:hover{
+    border:2px solid white;
+    background-color: #008C9E;
+    color: white;
+    
+}
+
+
+
+.botao2{
+    align-content: right;
+    width:  150px;
+    height: 50px;
+    border:2px solid black;
+    background-color: white;
+    font-family:'poppins', sans-serif;
+    font-size: 17pt;
+    cursor:pointer;
+    transition: color 0.3s;
+    transition: border 0.3s;
+    transition: background-color 0.3s;
+}
+
+.botao2:hover{
+    border:2px solid white;
+    background-color: #008C9E;
+    color: white;
+}
+
+
+.borda{
+padding: 0.8%;
+border: 2px solid rgb(117, 117, 117);
+font-size: 13pt;
+font-family: Lato, sans-serif;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 48, 63, 0.979) ;
+    overflow-x: hidden;
+    transition: 0.9s;
+    padding-top: 60px;
+    text-align: justify;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 65px;
+    font-weight: 500;
+    color: #8181815d;
+    display: block;
+    transition:0.5s;
+    margin-left: 40%;
+    font-family: poppins, sans-serif;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 110px;
+    font-size: 120px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

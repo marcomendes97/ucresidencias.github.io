@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="forum.css">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar">
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="info-residências.html">Info</a>
+                <a href="dados.html">Formulário</a>
+                <a href="fórum.html">Fórum</a>
+                <a href="perfil.html">Perfil</a>
+                <a href="home.html">logout</a>
+            </div>
+            <span style="font-size:60px;cursor:pointer;margin-left: 88%;margin-top: 60%;" onclick="openNav()">&#9776;</span>
+        </nav>
+        <div class="grid">
+            <header>
+                <p class="info">Fórum</p>
+                <div class="resi">
+                    <p>Temas e Questões</p>
+                </div>
+            </header>
+
+
+            <p class="textoesq">ESCOLHE O TÓPICO</p>
+
+
+            <div class="arealista">
+                <ul class="textolista">
+                    <li><i class="fas fa-angle-double-right"></i><a class="edit" href="TemaCandidatura.html">Candidatura</li></a>
+                    <li><i class="fas fa-angle-double-right"></i><a class="edit" href="#">Instalações na UC</li></a>
+                    <li><i class="fas fa-angle-double-right"></i><a class="edit" href="#">Preços e Pagamentos</li></a>
+                    <li><i class="fas fa-angle-double-right"></i><a class="edit" href="#">Consumos</li></a>
+                    <li><i class="fas fa-angle-double-right"></i><a class="edit" href="#">Bolsas de Estudo</li></a>
+                </ul>
+            </div>
+
+            <p class="textodir">ADICONA PERGUNTA</p>
+            <input type="text" class="inputexto" placeholder="Escreve aqui">
+            <div class="areabotao">
+
+                <a href="SignInFinal.html" class="botao">Submeter</a>
+
+
+            </div>
+
+            <div class="areabotao2">
+                <a href="SignInFinal.html" class="botao2">Apagar</a>
+
+            </div>
+        </div>
+    </section>
+
+    <style>
+
+
+    </style>
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

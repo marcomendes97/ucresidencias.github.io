@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <div class="grid-item"></div>
+
+
+        <div class="grid-item"></div>
+        <div class="grid-item" id="info" class="info"><a href="info-residências.html" target="_blank">Info</a>
+        </div>
+
+        <div class="grid-item"></div>
+
+        <div class="grid-item"></div>
+
+        <div class="grid-item"><a href="dados.html" target="_blank">Formulário</a>
+        </div>
+        <div class="grid-item"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item"><a href="fórum.html" target="_blank">Forúm</a>
+        </div>
+        <div class="grid-item"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item"><a href="#" target="_blank">Perfil</a>
+        </div>
+        <div class="grid-item"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item"><a href="Indexfinal.html" target="_blank">logout</a>
+        </div>
+
+
+    </div>
+
+
+
+    <style>
+
+    </style>
+
+</body>
+
+
+<script>
+
+    $('<img/>').hide().attr('src', 'http://4.bp.blogspot.com/-3YtwFdb01YI/TnCNSc1c93I/AAAAAAAAA5c/V6g_3ghlw30/s1600/Background+13.jpg').load(function () {
+        $('body').append($(this));
+    });
+
+
+    $('#info').hover(function () {
+        $('body').css('background-image', 'http://4.bp.blogspot.com/-3YtwFdb01YI/TnCNSc1c93I/AAAAAAAAA5c/V6g_3ghlw30/s1600/Background+13.jpg)');
+    }, function () {
+        $('body').css('background', '');
+    });
+
+</script>
+
+</html>
