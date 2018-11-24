@@ -20,7 +20,7 @@
                             <a href="dados.html">Formulário</a>
                             <a href="fórum.html">Fórum</a>
                             <a href="perfil.html">Perfil</a>
-                            <a href="Indexfinal.html">logout</a>
+                            <a href="SignInFinal.html">logout</a>
                           </div>
                           <span style="font-size:60px;cursor:pointer;margin-left: 88%;margin-top: 60%;" onclick="openNav()">&#9776;</span>
                 </nav>
@@ -28,29 +28,27 @@
         <header>
          <p class="info">Info</p>
         <div class="resi">
-         <p>Mapa das Residências</p>
+         <p>Mapa</p>
         </div>
 
         </header>
      
         <aside class="sidebar-left">
                 <ul class="listaresi">
-                        <li><a href="#">Residência1</a></li>
-                        <li><a href="#">Residência1</a></li>
-                        <li><a href="#">Residência1</a></li>
-                        <li><a href="#">Residência1</a></li>
-                        <li><a href="#">Residência1</a></li>
-                        <li><a href="#">Residência1</a></li>
-                        <li><a href="#">Residência1</a></li>
-                        <li><a href="#">Residência1</a></li>
-                        <li><a href="#">Residência1</a></li>
-                        <li><a href="#">Residência1</a></li>
-                        <li><a href="#">Residência1</a></li>
-                        <li><a href="#">Residência1</a></li>
-                        <li><a href="#">Residência1</a></li>
-                        <li><a href="#">Residência1</a></li>
-                        <li><a href="#">Residência1</a></li>
-                      
+                        <li><a href="#">Residência Universitária Alegria</a></li>
+                        <li><a href="#">Residência Universitária S. Salvador</a></li>
+                        <li><a href="#">Residência Universitária João Jacinto</a></li>
+                        <li><a href="#">Residência Universitária Padre António Vieira</a></li>
+                        <li><a href="#">Residência Universitária PoloII_1</a></li>
+                        <li><a href="#">Residência Universitária PoloII_2</a></li>
+                        <li><a href="#">Residência Universitária Pedro Nunes</a></li>
+                        <li><a href="#">Residência Universitária PoloIII</a></li>
+                        <li><a href="#">Residência Universitária António José d'Almeida</a></li>
+                        <li><a href="#">Residência Universitária Observatório Astronómico</a></li>
+                        <li><a href="#">Residência Universitária Penedo da Saudade</a></li>
+                        <li><a href="#">Residência Universitária Santos Rocha</a></li>
+                        <li><a href="#">Residência Universitária Teodoro</a></li>
+                        <li><a href="#">Residência Universitária Combatentes</a></li>
                       </ul>
         </aside>
       
@@ -67,6 +65,40 @@
     </section>
 
  
+<script>
+   // Initialize and add the map
+   function initMap() {
+          // The location of Uluru
+          var uluru = {lat: 40.20564, lng: -8.41955};
+          var alegria = {lat: 40.20659, lng:  -8.42813};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('mapa'), {zoom: 14, center: uluru});
+          // The marker, positioned at Uluru
+          
+          var marker = new google.maps.Marker({position: alegria, map: map});
+
+          var infowindow = new google.maps.infowindow({
+              content:"localização1"
+          });
+          infowindow.open(map, marker);
+        }
+          </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgDWH_VZSd0SftIOlCXE5jbpDYaYV6nDw&callback=initMap">
+            </script>
+
+<script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+</script>
+
 </html>
 
 
